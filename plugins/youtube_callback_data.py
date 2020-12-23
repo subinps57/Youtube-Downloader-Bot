@@ -52,7 +52,7 @@ async def catch_youtube_dldata(c, q):
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await q.edit_message_reply_markup(
-        InlineKeyboardMarkup([[InlineKeyboardButton("Downloading...", callback_data="down")]]))
+        InlineKeyboardMarkup([[InlineKeyboardButton("Youtube- ഇൽ നിന്ന് വീഡിയോ SL8  കേറ്റികൊണ്ടിരിക്കാണ്😜", callback_data="down")]]))
     filepath = os.path.join(userdir, filext)
     # await q.edit_message_reply_markup([[InlineKeyboardButton("Processing..")]])
 
@@ -121,7 +121,7 @@ async def send_file(c, q, med, filename):
     print(med)
     try:
         await q.edit_message_reply_markup(
-            InlineKeyboardMarkup([[InlineKeyboardButton("Uploading...", callback_data="down")]]))
+            InlineKeyboardMarkup([[InlineKeyboardButton("കേറ്റിയത് ടെലഗ്രാമിൽ ഇറക്കുക ആണ്😝", callback_data="down")]]))
         await c.send_chat_action(chat_id=q.message.chat.id, action="upload_document")
         # this one is not working
         await q.edit_message_media(media=med)
