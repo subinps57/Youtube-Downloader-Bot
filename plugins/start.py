@@ -9,6 +9,6 @@ async def start(client, message):
         [InlineKeyboardButton(
             "Report Bugs 😊", url="https://t.me/subinps")]
     ])
-    welcomed = f"ഹലോ മിസ്റ്റർ <b>{message.from_user.first_name}</b>\nകൂടുതൽ അറിയാനും സഹായങ്ങൾകും/help ഉപയോഗിക്കുക "
+    welcomed = f"ഹലോ മിസ്റ്റർ <b>{message.from_user.first_name}</b>\nഞാൻ ആണ് SL8 Bot\nകൂടുതൽ അറിയാനും സഹായങ്ങൾകും/help ഉപയോഗിക്കുക "
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
